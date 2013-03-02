@@ -1,9 +1,6 @@
-browser-connect-server
-======================
-
 Inspired by LightTable's browser connect mode.
 
-### Endpoints
+---
 
 #### `GET /ws`
 
@@ -14,6 +11,8 @@ waits for orders. Include this into your templates like so:
 <script src="http://localhost:9000/ws"></script>
 ```
 
+---
+
 #### `GET /reloadCSS`
 
 Order the client (`/ws`) to reload all the CSS files in all the
@@ -22,6 +21,8 @@ templates that it has been loaded in.
 ```bash
 curl localhost:9000/reloadCSS
 ```
+
+---
 
 #### `POST /evaluateJS`
 
