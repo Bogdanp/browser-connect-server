@@ -25,6 +25,6 @@ class Client
             link.href = link.oref + "?c=" + (new Date).getTime()
 
     log: (message) ->
-        console.log("browser-connect: " + message + ".")
+        if console then console.log("browser-connect: " + message + ".")
 
 new Client
