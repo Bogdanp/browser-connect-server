@@ -1,0 +1,8 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+POST    /evaluateJS                 controllers.Application.evaluateJS
+GET     /reloadCSS                  controllers.Application.reloadCSS
+GET     /socket                     controllers.Application.socket
+GET     /ws                         controllers.Assets.at(path="/public/javascripts/", file="main.min.js")
