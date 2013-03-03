@@ -18,6 +18,11 @@ object Application extends Controller {
     Coordinator.default ! Send(JsObject(Seq(
       "action" -> JsString("reloadCSS"))))
   }
+  
+  def reloadPage = Resource { request =>
+    Coordinator.default ! Send(JsObject(Seq(
+      "action" -> JsString("reloadPage"))))
+  }
 
   def socket = WebSocket.async[JsValue](_ => Coordinator.listen)
 

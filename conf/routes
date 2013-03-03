@@ -4,5 +4,6 @@
 
 POST    /evaluateJS                 controllers.Application.evaluateJS
 GET     /reloadCSS                  controllers.Application.reloadCSS
+GET     /reloadPage                 controllers.Application.reloadPage
 GET     /socket                     controllers.Application.socket
 GET     /ws                         controllers.Assets.at(path="/public", file="javascripts/main.min.js")

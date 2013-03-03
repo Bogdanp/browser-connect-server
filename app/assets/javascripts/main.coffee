@@ -13,6 +13,7 @@ class Client
 
         switch request.action
             when "reloadCSS" then @reloadCSS()
+            when "reloadPage" then @reloadPage()
             when "evaluateJS" then eval(request.source)
             else @log("action '" + request.action + "' is invalid")
 
@@ -23,6 +24,9 @@ class Client
             if !link.oref
                 link.oref = link.href
             link.href = link.oref + "?c=" + (new Date).getTime()
+
+    reloadPage: ->
+        document.location.href = document.location.href
 
     log: (message) ->
         if console then console.log("browser-connect: " + message + ".")
