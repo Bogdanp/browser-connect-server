@@ -5,7 +5,7 @@ unpackaging the zip file, you can run the server by doing `sh start`.
 You must have at least Java 7 installed in order to be able to run it.
 
 [1]: http://www.lighttable.com/
-[2]: http://192.81.222.81/browser-connect-0.2-SNAPSHOT.zip
+[2]: http://192.81.222.81/browser-connect-0.2.1-SNAPSHOT.zip
 
 ---
 

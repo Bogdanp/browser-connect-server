@@ -26,7 +26,7 @@ class Client
             link.href = link.oref + "?c=" + (new Date).getTime()
 
     reloadPage: ->
-        document.location.href = document.location.href
+        window.location.reload()
 
     log: (message) ->
         if console then console.log("browser-connect: " + message + ".")
