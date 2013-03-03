@@ -1,6 +1,6 @@
 class Client
     constructor: ->
-        @socket = new WebSocket("ws://localhost:9000/socket")
+        @socket = new WebSocket("ws://localhost:9001/socket")
         @socket.onopen    = => @log("connection established")
         @socket.onclose   = => @log("connection closed")
         @socket.onerror   = (event) => @log(event.data)
